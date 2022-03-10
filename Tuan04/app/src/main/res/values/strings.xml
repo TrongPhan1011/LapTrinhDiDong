@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Tuan04</string>
+    <string name="name">Name</string>
+    <string name="shop">Shop</string>
+    <string name="txtShop">Shop1</string>
+    <string name="btnchat">Button</string>
+    <string name="img">TODO</string>
+    <string-array name="list_items">
+        <item>Ca nấu lẩu</item>
+        <item>Khô gà</item>
+        <item>Xe đồ chơi</item>
+        <item>Ca nấu lẩu</item>
+        <item>Khô gà</item>
+        <item>Xe đồ chơi</item>
+        <item>Ca nấu lẩu</item>
+        <item>Khô gà</item>
+        <item>Xe đồ chơi</item>
+
+
+
+
+
+
+    </string-array>
+
+</resources>
