@@ -6,10 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ListView
-        android:id="@+id/lvInfo"
-        android:layout_width="383dp"
-        android:layout_height="551dp"
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="398dp"
+        android:layout_height="544dp"
+        android:numColumns="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

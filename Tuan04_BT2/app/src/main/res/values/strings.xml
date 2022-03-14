@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tuan4_BT2</string>
+    <string name="text_demo">Text demo</string>
+    <string name="textview">TextView</string>
+    <string name="todo">TODO</string>
+    <string name="_15">(15)</string>
+    <string name="todo2">TODO</string>
+    <string name="todo3">TODO</string>
+    <string name="todo4">TODO</string>
+    <string name="todo5">TODO</string>
+    <string name="todo6">TODO</string>
+</resources>
