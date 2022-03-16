@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tuan05</string>
+    <string name="welcome_jala">Welcome, Jala!</string>
+    <string name="search_food">Search food</string>
+    <string name="button">Button</string>
+    <string name="choice_you_best_food">Choice you Best food</string>
+</resources>
