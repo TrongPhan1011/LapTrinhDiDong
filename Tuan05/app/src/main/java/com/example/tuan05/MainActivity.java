@@ -25,8 +25,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         overridePendingTransition(R.anim.right_to_left, R.anim.left_to_right);
+
         lsDonut = new ArrayList<Donut>();
+
         btnPink = (Button) findViewById(R.id.btnPinkDonut);
         btnPink.setOnClickListener(this);
         btnFloating = (Button) findViewById(R.id.btnFloating);
@@ -36,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         txtSearch =  findViewById(R.id.txtSearch);
         txtSearch.setOnKeyListener(this);
+
 
 
         int red = R.drawable.donut_red;
@@ -66,6 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         if (view.getId() == R.id.btnPinkDonut) {
             showPinkDonut();
+
 
         }
         if (view.getId() == R.id.btnFloating) {

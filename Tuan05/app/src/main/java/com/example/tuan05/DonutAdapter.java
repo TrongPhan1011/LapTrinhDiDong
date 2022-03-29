@@ -8,11 +8,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.google.gson.Gson;
 
@@ -37,7 +33,7 @@ public class DonutAdapter extends BaseAdapter {
 
         if(lsDonut.size() != 0 && !lsDonut.isEmpty() )
             return lsDonut.size();
-        return 0;
+        return 1;
     }
 
     @Override
@@ -63,9 +59,11 @@ public class DonutAdapter extends BaseAdapter {
         ImageView img = (ImageView) view.findViewById(R.id.imgDonut);
         Donut donut = lsDonut.get(position);
 
-        final ConstraintLayout constraintLayout = (ConstraintLayout) view.findViewById(R.id.layoutItemDonut);
 
-        if(lsDonut != null&& !lsDonut.isEmpty()){
+
+
+
+        if(lsDonut != null && !lsDonut.isEmpty()){
             tvName.setText(donut.getName());
             tvMoTa.setText(donut.getMoTa());
             tvGia.setText("$"+donut.getGia());
@@ -75,9 +73,7 @@ public class DonutAdapter extends BaseAdapter {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Toast.makeText(context, donut.getName(), Toast.LENGTH_LONG).show();
-//                positionSelect = position;
-//                notifyDataSetChanged();
+
                 clickDonut(donut);
 
             }
@@ -93,6 +89,10 @@ public class DonutAdapter extends BaseAdapter {
         Gson gson = new Gson();
         String donutJson = gson.toJson(donut);
         intent.putExtra("donut",donutJson);
+
+
+
+
 //        context.sendBroadcast(intent);
 
         context.startActivity(intent);

@@ -34,6 +34,7 @@ public class DetailDonut extends AppCompatActivity {
         ImageView imgDonut = (ImageView) findViewById(R.id.imgDetailDonut);
 
 
+
         tvName.setText(donut.getName());
         tvGia.setText("$"+donut.getGia());
         tvMoTa.setText(donut.getMoTa());
