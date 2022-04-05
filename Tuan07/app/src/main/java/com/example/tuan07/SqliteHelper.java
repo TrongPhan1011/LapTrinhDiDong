@@ -71,13 +71,16 @@ public class SqliteHelper extends SQLiteOpenHelper {
         return ls;
     }
 
-    public int updateItem(Item item) {
+    public void updateItem(Item item) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
         values.put(NAME, item.getName());
+//        String sql = "UPDATE "+tableName +" SET name =" +item.getName()+ "where id="+item.getId();
+//
+//        db.execSQL(sql);
 
-        return db.update(tableName, values, key + " = ?",
+        db.update(tableName, values, key + " = ?",
                 new String[] { String.valueOf(item.getId()) });
     }
 

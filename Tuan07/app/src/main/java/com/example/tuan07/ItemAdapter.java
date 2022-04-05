@@ -52,7 +52,7 @@ public class ItemAdapter extends BaseAdapter {
 
          Item item = lsItem.get(i);
 
-         EditText txt = view.findViewById(R.id.txt);
+         EditText txt = (EditText) view.findViewById(R.id.txt);
 
 
         Button btnUpdate = view.findViewById(R.id.btnUpdate);
@@ -65,7 +65,7 @@ public class ItemAdapter extends BaseAdapter {
 
         if(lsItem != null && !lsItem.isEmpty()){
             tvName.setText(item.getId() +". " + item.getName());
-            btnDelete.se
+
 
         }
 
@@ -90,18 +90,19 @@ public class ItemAdapter extends BaseAdapter {
     }
 
     public void clickUpdate(Item item,EditText txt){
-
-
-        String name = txt.getText().toString().trim();
-
-        item.setName(name);
-        db.updateItem(item);
+        if(txt!= null && txt.length()!=0) {
+            String name = txt.getText().toString().trim();
+            item.setName(name);
+            db.updateItem(item);
+            txt.setText("");
+        }
 
 
 
     }
     public void clickDelete(Item item){
         db.deleteItem(item);
+
 
     }
 

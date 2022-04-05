@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 EditText txt = findViewById(R.id.txt);
                 txt.setText("");
+                showList();
             }
         });
 
