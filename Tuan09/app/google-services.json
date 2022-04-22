@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "786303698412",
+    "project_id": "tuan09-firebase-demo",
+    "storage_bucket": "tuan09-firebase-demo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786303698412:android:cb95aee297be1ac995acc9",
+        "android_client_info": {
+          "package_name": "com.example.tuan09_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "786303698412-qfmpot0s8c2mo7ft2fkmmeksh2731c4i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkn_xE6befYaQpavpcyUk6VyGry1jqQ7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "786303698412-qfmpot0s8c2mo7ft2fkmmeksh2731c4i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786303698412:android:c3640566d3231cba95acc9",
+        "android_client_info": {
+          "package_name": "com.tp.tuan09"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "786303698412-qfmpot0s8c2mo7ft2fkmmeksh2731c4i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkn_xE6befYaQpavpcyUk6VyGry1jqQ7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "786303698412-qfmpot0s8c2mo7ft2fkmmeksh2731c4i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
